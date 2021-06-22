@@ -1,45 +1,71 @@
 import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
-import { FaPizzaSlice } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 
 export const Nav = styled.nav`
   background: transparent;
   height: 80px;
   display: flex;
-  justify-content: center;
-  font-weight: 700;
+  justify-content: space-between;
+  
+  z-index: 10;
 `;
 
 export const NavLink = styled(Link)`
   color: #fff;
-  font-size: 2rem;
+  font-size: 1rem;
   display: flex;
   align-items: center;
   text-decoration: none;
+  padding: 0 1.5rem;
   cursor: pointer;
 
-  @media screen and (max-width: 400px) {
-    position: absolute;
-    top: 10px;
-    left: 25px;
+  &:hover{
+    color: #3A00FD,
   }
 `;
 
-export const NavIcon = styled.div`
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  coursor: pointer;
-  color: #fff;
+export const Bars = styled(FaBars)`
+ display: none;
+ color: #fff;
 
-  p {
-    transform: translate(-200%, 100%);
-    font-weight: bold;
-  }
+ @media screen and (max-width: 900px){
+   display: block;
+   position: absolute;
+   top: 0;
+   right: 0;
+   transform: translate(-100%, 75%);
+   font-size: 1.8rem;
+   cursor: pointer;
+ }
 `;
+export const NavMenu = styled.div`
+ display: flex;
+ align-items: center;
+ margin-right: 40px;
 
-export const Bars = styled(FaPizzaSlice)`
-  font-size: 2rem;
-  transform: translate(-50%, 1%);
-`;
+ @media screen and (max-width: 900px){
+   display: none;
+
+ }
+`
+
+export const NavBtnLink = styled.button`
+ border-radius: 4px;
+ background: #3A00FD;
+ padding: 10px 22px;
+ color: #fff;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ transition: all 0.2s ease-in-out;
+ text-decoration: none;
+ margin-left: rem;
+ 
+
+ &:hover{
+  transition: all 0.2s ease-in-out;
+  background: #fff;
+  color: #000;
+ }
+`
