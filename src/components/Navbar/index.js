@@ -6,15 +6,16 @@ function Navbar({ toggle }) {
     <>
       <Nav>
         <NavLink to="/">
-          <h1>K.<h1>Nirushana</h1></h1>
+          <h1 style={{fontWeight: "bold", margin: '50px'}}>K.Nirushana</h1>
         </NavLink>
         <Bars onClick={toggle}/>
         <NavMenu>
           <NavLink to="\home">Home</NavLink>
           <NavLink to="\about">About</NavLink>
           <NavLink to="\skills">Skills</NavLink>
-          <NavLink to="\uiDesign">UI design</NavLink>
+          <NavLink to="\services">Services</NavLink>
           <NavLink to="\projects">Projects</NavLink>
+          <NavLink to="\contact">Contact</NavLink>
           <NavBtnLink>Download CV</NavBtnLink>
         </NavMenu>
       </Nav>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { SidebarContainer, Icon, CloseIcon, SidebarMenu, SidebarLink, SidebarRoute, SidebarBtnWrap } from './SidebarElements';
+import { SidebarContainer, Icon, CloseIcon, SidebarMenu, SidebarLink, SidebarBtnWrap } from './SidebarElements';
 
 function Sidebar({isOpen, toggle}) {
     return (
@@ -8,11 +8,13 @@ function Sidebar({isOpen, toggle}) {
                 <CloseIcon/>
             </Icon>
             <SidebarMenu>
-                <SidebarLink to="/">Pizzas</SidebarLink>
-                <SidebarLink to="/">Deserts</SidebarLink>
-                <SidebarLink to="/">Full Menu</SidebarLink>
+                <SidebarLink to="/">Home</SidebarLink>
+                <SidebarLink to="/">About</SidebarLink>
+                <SidebarLink to="/">Services</SidebarLink>
+                <SidebarLink to="/">Projects</SidebarLink>
+                <SidebarLink to="/">Contact</SidebarLink>
             </SidebarMenu>
-            <SidebarRoute to ="/">Order Now</SidebarRoute>
+            
             <SidebarBtnWrap />
         </SidebarContainer>
     )
