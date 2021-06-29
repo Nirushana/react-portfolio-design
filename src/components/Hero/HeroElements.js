@@ -66,18 +66,22 @@ export const HeroSideText = styled.div`
     text-transform: uppercase;
     font-size: 4.5rem;
   }
-  
+  @media screen and (max-width: 950px) {
+    font-size: 1rem;
+  }
 `;
 
 export const HeroMianImg = styled.img`
-  height: 420px;
-  min-width: 280px;
+  height: 60%;
+  min-width: 25%;
   max-width: 100%;
   box-shadow: 8px 8px #fff;
   margin-top: 10rem;
 
   @media screen and (max-width: 950px) {
-    margin-left: -10rem;
+    margin-left: -16rem;
+    margin-top: 4rem;
+    height: 45%;
   }
 `
 
