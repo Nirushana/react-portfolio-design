@@ -18,6 +18,11 @@ export const HeroContent = styled.div`
   padding: 0rem calc((100vw-1300px) / 2);
   display: flex;
   flex-direction: row;
+
+  @media screen and (max-width: 650px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const HeroItems = styled.div`
@@ -35,8 +40,12 @@ export const HeroItems = styled.div`
   margin-left: 4vw;
 
   @media screen and (max-width: 650px) {
-    width: 100%;
+    margin-left: 10vw;
+    width: 90%;
+    margin-top: -10vh;
   }
+
+ 
 `;
 
 export const HeroBtn = styled.button`
@@ -55,42 +64,34 @@ export const HeroBtn = styled.button`
   }
 `;
 
-export const HeroSideText = styled.div`
-  transform-origin: 0 0;
-  transform: rotate(-90deg);
-  color: #fff;
-  margin-top: 80vh;
-  /* margin-left: 2rem; */
+// export const HeroSideText = styled.div`
+//   transform-origin: 0 0;
+//   transform: rotate(-90deg);
+//   color: #fff;
+//   margin-top: 80vh;
+//   /* margin-left: 2rem; */
 
-  h1 {
-    text-transform: uppercase;
-    font-size: 4.5rem;
-  }
-  @media screen and (max-width: 950px) {
-    font-size: 1rem;
-  }
-`;
+//   h1 {
+//     text-transform: uppercase;
+//     font-size: 4.5rem;
+//   }
+//   @media screen and (max-width: 950px) {
+//     font-size: 1rem;
+//   }
+// `;
 
-export const HeroMianImg = styled.img`
-  height: 60%;
-  min-width: 25%;
-  max-width: 100%;
-  box-shadow: 8px 8px #fff;
-  margin-top: 10rem;
-
-  @media screen and (max-width: 950px) {
-    margin-left: -16rem;
-    margin-top: 4rem;
-    height: 45%;
-  }
-`
 
 export const HeroH1 = styled.h1`
-  font-size: clamp(2rem, 8vw, 3.5rem);
+  font-size: clamp(2rem, 7vw, 3.5rem);
   border-bottom: 7px solid red;
   border-radius: 2px;
   margin-bottom: 1rem;
+  width: 100%;
   
+  @media screen and (max-width: 650px) {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+  }
+
 `
 
 export const HeroH2 = styled.h2`
@@ -106,7 +107,28 @@ flex-direction: row;
  margin-left: -14vw;
 `
 export const HeroP = styled.p`
-  font-size: clamp(2.5rem, 3vw, 3.5rem);
+  font-size: clamp(2.4rem, 3vw, 3.4rem);
   margin-bottom: 2rem;
   font-weight: 300;
+
+  @media screen and (max-width: 650px) {
+    font-size: clamp(1.4rem, 5vw, 2.5rem);
+  }
 `;
+
+export const HeroImg = styled.img`
+ max-width: 100%;
+ width: 15rem;
+ max-height: 100%;
+ height: 25rem;
+ box-shadow: 9px 8px #fff;
+ margin-top: 20vh;
+ margin-left: 10%;
+
+ @media screen and (max-width: 650px) {
+   margin-left: 20vw;
+   margin-top: -2vh;
+   height: 20rem;
+   width: 12rem;;
+ }
+`

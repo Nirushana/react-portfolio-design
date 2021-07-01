@@ -5,13 +5,11 @@ import {
   HeroContainter,
   HeroContent,
   HeroItems,
-  HeroMianImg,
   HeroBtn,
-  HeroSideText,
   HeroH2,
   HeroH1,
   HeroP,
-  HeroContext
+  HeroImg,
 } from "./HeroElements";
 import proImg from "../../images/portfolio_main.jpg";
 
@@ -27,18 +25,13 @@ function Hero() {
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <HeroContent>
-        <HeroSideText>
-          <h1>Portfolio</h1>
-        </HeroSideText>
-        <HeroContext>
-          <HeroMianImg src={proImg} alt="Profile Image" />
-          <HeroItems>
-            <HeroH2>Hi! my name is </HeroH2>
-            <HeroH1>KAVINDA NIRUSHANA</HeroH1>
-            <HeroP>I am a Front-end Developer</HeroP>
-            <HeroBtn>Hire Me</HeroBtn>
-          </HeroItems>
-        </HeroContext>
+        <HeroImg src={proImg} />
+        <HeroItems>
+          <HeroH2>Hi! my name is </HeroH2>
+          <HeroH1>KAVINDA NIRUSHANA</HeroH1>
+          <HeroP>I am a Front-end Developer</HeroP>
+          <HeroBtn>Hire Me</HeroBtn>
+        </HeroItems>
       </HeroContent>
     </HeroContainter>
   );
