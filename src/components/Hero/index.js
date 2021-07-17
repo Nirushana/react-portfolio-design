@@ -4,11 +4,12 @@ import Sidebar from "../Sidebar";
 import {
   HeroContainter,
   HeroContent,
-  HeroItems,
+  HeroRight,
   HeroBtn,
   HeroH2,
   HeroH1,
   HeroP,
+  HeroLeft,
   HeroImg,
 } from "./HeroElements";
 import proImg from "../../images/portfolio_main.jpg";
@@ -25,13 +26,15 @@ function Hero() {
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <HeroContent>
+        <HeroLeft>
         <HeroImg src={proImg} />
-        <HeroItems>
+        </HeroLeft>
+        <HeroRight>
           <HeroH2>Hi! my name is </HeroH2>
           <HeroH1>KAVINDA NIRUSHANA</HeroH1>
           <HeroP>I am a Front-end Developer</HeroP>
           <HeroBtn>Hire Me</HeroBtn>
-        </HeroItems>
+        </HeroRight>
       </HeroContent>
     </HeroContainter>
   );
