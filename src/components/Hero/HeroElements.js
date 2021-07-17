@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import ImgBg from "../../images/pexels-valeriia-miller-3856444.jpg";
 
+// HeroSection Main Cantainer
 export const HeroContainter = styled.div`
   background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)),
     url(${ImgBg});
@@ -9,6 +10,8 @@ export const HeroContainter = styled.div`
   background-position: center;
   background-size: cover;
 `;
+
+// End of HeroSection Main Container
 
 export const HeroContent = styled.div`
   width: 90%;
@@ -23,11 +26,10 @@ export const HeroRight = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: 100vh;
+  /* height: 100vh;
   max-height: 100%;
-  width: 650px;
+  width: 650px; */
   color: #fff;
-
   line-height: 1;
   font-weight: bold;
   margin-left: 4vw;
@@ -35,7 +37,7 @@ export const HeroRight = styled.div`
 
 export const HeroBtn = styled.button`
   font-size: 1.4rem;
-  padding: 1rem 4rem;
+  padding: 1rem 3rem;
   border: none;
   background: #3a00fd;
   color: #fff;
@@ -49,36 +51,19 @@ export const HeroBtn = styled.button`
   }
 `;
 
-// export const HeroSideText = styled.div`
-//   transform-origin: 0 0;
-//   transform: rotate(-90deg);
-//   color: #fff;
-//   margin-top: 80vh;
-//   /* margin-left: 2rem; */
-
-//   h1 {
-//     text-transform: uppercase;
-//     font-size: 4.5rem;
-//   }
-//   @media screen and (max-width: 950px) {
-//     font-size: 1rem;
-//   }
-// `;
 
 export const HeroH1 = styled.h1`
-  font-size: clamp(2rem, 7vw, 3.5rem);
+  font-size: clamp(2rem, 5vw, 3.5rem);
   border-bottom: 7px solid red;
   border-radius: 2px;
   margin-bottom: 1rem;
   width: 100%;
 
-  @media screen and (max-width: 650px) {
-    font-size: clamp(1.8rem, 5vw, 3rem);
-  }
 `;
 
+
 export const HeroH2 = styled.h2`
-  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-size: clamp(1.5rem, 3vw, 3rem);
   font-weight: 300;
   margin-bottom: 1rem;
 `;
@@ -86,9 +71,15 @@ export const HeroH2 = styled.h2`
 
 
 export const HeroP = styled.p`
-  font-size: clamp(2.4rem, 3vw, 3.4rem);
+  font-size: clamp(2.4rem, 1.5vw, 3.4rem);
   margin-bottom: 2rem;
   font-weight: 300;
+`;
+
+// HeroSection LeftSide
+
+export const HeroLeft = styled.div`
+  flex: 8;
 `;
 
 export const HeroImg = styled.img`
@@ -99,15 +90,6 @@ export const HeroImg = styled.img`
   box-shadow: 9px 8px #fff;
   margin-top: 20vh;
   margin-left: 10%;
-
-  @media screen and (max-width: 650px) {
-    margin-left: 20vw;
-    margin-top: -2vh;
-    height: 20rem;
-    width: 12rem;
-  }
 `;
 
-export const HeroLeft = styled.div`
-  flex: 8;
-`;
+// End of HeroSection LeftSide

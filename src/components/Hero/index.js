@@ -33,7 +33,7 @@ function Hero() {
           <HeroH2>Hi! my name is </HeroH2>
           <HeroH1>KAVINDA NIRUSHANA</HeroH1>
           <HeroP>I am a Front-end Developer</HeroP>
-          <HeroBtn>Hire Me</HeroBtn>
+          <HeroBtn>See My Work</HeroBtn>
         </HeroRight>
       </HeroContent>
     </HeroContainter>

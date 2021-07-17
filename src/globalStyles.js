@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
  *{
@@ -8,4 +8,9 @@ export const GlobalStyle = createGlobalStyle`
      font-family: 'Kanit', sans-serif;
      
  }
-`
+
+ img{
+    width: 100%;
+    height: 100%;
+ }
+`;
