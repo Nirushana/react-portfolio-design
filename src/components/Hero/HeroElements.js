@@ -21,6 +21,7 @@ export const HeroContent = styled.div`
   margin: 0 auto;
   max-width: 1000px;
   display: flex;
+  position: relative;
 
   @media only screen and (max-width: 768px) {
     flex-direction: column;
@@ -150,3 +151,22 @@ export const HeroImg = styled.img`
 `;
 
 // End of HeroSection LeftSide
+
+// Hero Section Vertical Text
+
+export const HeroVerticalText = styled.div`
+ font-size: 3rem;
+ color: #fff;
+ writing-mode: sideways-lr;
+ position: absolute;
+ margin-top: 56vh;
+ margin-left: 20px;
+text-orientation: mixed;
+font-weight: 600;
+
+@media only screen and (max-width: 768px){
+  display: none;
+}
+`
+
+// End of Hero Hero Section Vertical Text 

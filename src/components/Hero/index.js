@@ -11,6 +11,7 @@ import {
   HeroP,
   HeroLeft,
   HeroImg,
+  HeroVerticalText
 } from "./HeroElements";
 import proImg from "../../images/portfolio_main.jpg";
 
@@ -25,7 +26,9 @@ function Hero() {
     <HeroContainter>
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
+      <HeroVerticalText>Portfolio</HeroVerticalText>
       <HeroContent>
+        
         <HeroLeft>
         <HeroImg src={proImg} />
         </HeroLeft>
