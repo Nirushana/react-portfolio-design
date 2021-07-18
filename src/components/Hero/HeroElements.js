@@ -10,7 +10,8 @@ export const HeroContainter = styled.div`
   background-position: center;
   background-size: cover;
 
-  @media only screen and (max-width: 768px) {}
+  @media only screen and (max-width: 768px) {
+  }
 `;
 
 // End of HeroSection Main Container
@@ -67,11 +68,10 @@ export const HeroBtn = styled.button`
     color: #000;
   }
 
-  @media only screen and (max-width: 768px){
+  @media only screen and (max-width: 768px) {
     font-size: 1.2rem;
-  padding: 1rem 2.6rem;
+    padding: 1rem 2.6rem;
   }
-
 `;
 
 export const HeroH1 = styled.h1`
@@ -81,11 +81,11 @@ export const HeroH1 = styled.h1`
   margin-bottom: 1rem;
   width: 100%;
 
-  @media only screen and (max-width: 768px){
+  @media only screen and (max-width: 768px) {
     font-size: 1.8rem;
   }
 
-  @media only screen and (max-width: 950px){
+  @media only screen and (max-width: 950px) {
     font-size: 2.5rem;
   }
 `;
@@ -95,7 +95,7 @@ export const HeroH2 = styled.h2`
   font-weight: 300;
   margin-bottom: 1rem;
 
-  @media only screen and (max-width: 768px){
+  @media only screen and (max-width: 768px) {
     font-size: 1rem;
   }
 
@@ -129,10 +129,9 @@ export const HeroLeft = styled.div`
     margin-bottom: 2rem;
   }
 
-  @media only screen and (max-width: 958px){
+  @media only screen and (max-width: 958px) {
     flex: 6;
   }
-
 `;
 
 export const HeroImg = styled.img`
@@ -155,18 +154,26 @@ export const HeroImg = styled.img`
 // Hero Section Vertical Text
 
 export const HeroVerticalText = styled.div`
- font-size: 3rem;
- color: #fff;
- writing-mode: sideways-lr;
- position: absolute;
- margin-top: 56vh;
- margin-left: 20px;
-text-orientation: mixed;
-font-weight: 600;
+  
+  writing-mode: sideways-lr;
+  position: absolute;
+  margin-top: 56vh;
+  margin-left: 20px;
+  text-orientation: mixed;
+  font-weight: 600;
 
-@media only screen and (max-width: 768px){
-  display: none;
-}
+  
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const HeroVerticalTextH1 = styled.h1`
+  font-size: 3rem;
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+
 `
 
-// End of Hero Hero Section Vertical Text 
+// End of Hero Hero Section Vertical Text
