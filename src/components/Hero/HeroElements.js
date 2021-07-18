@@ -9,6 +9,8 @@ export const HeroContainter = styled.div`
   height: 100vh;
   background-position: center;
   background-size: cover;
+
+  @media only screen and (max-width: 768px) {}
 `;
 
 // End of HeroSection Main Container
@@ -19,6 +21,11 @@ export const HeroContent = styled.div`
   margin: 0 auto;
   max-width: 1000px;
   display: flex;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    margin-top: -18vh;
+  }
 `;
 
 export const HeroRight = styled.div`
@@ -33,6 +40,15 @@ export const HeroRight = styled.div`
   line-height: 1;
   font-weight: bold;
   margin-left: 4vw;
+
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+    padding: 0;
+    flex: 1;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const HeroBtn = styled.button`
@@ -49,37 +65,73 @@ export const HeroBtn = styled.button`
     cursor: pointer;
     color: #000;
   }
+
+  @media only screen and (max-width: 768px){
+    font-size: 1.2rem;
+  padding: 1rem 2.6rem;
+  }
+
 `;
 
-
 export const HeroH1 = styled.h1`
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: 3rem;
   border-bottom: 7px solid red;
   border-radius: 2px;
   margin-bottom: 1rem;
   width: 100%;
 
-`;
+  @media only screen and (max-width: 768px){
+    font-size: 1.8rem;
+  }
 
+  @media only screen and (max-width: 950px){
+    font-size: 2.5rem;
+  }
+`;
 
 export const HeroH2 = styled.h2`
-  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-size: 2rem;
   font-weight: 300;
   margin-bottom: 1rem;
+
+  @media only screen and (max-width: 768px){
+    font-size: 1rem;
+  }
+
+  @media only screen and (max-width: 950x) {
+    font-size: 1.5rem;
+  }
 `;
 
-
-
 export const HeroP = styled.p`
-  font-size: clamp(2.4rem, 1.5vw, 3.4rem);
+  font-size: 2.5rem;
   margin-bottom: 2rem;
   font-weight: 300;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1.6rem;
+  }
+
+  @media only screen and (max-width: 950px) {
+    font-size: 2rem;
+  }
 `;
 
 // HeroSection LeftSide
 
 export const HeroLeft = styled.div`
   flex: 8;
+
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+    flex: 1;
+    margin-bottom: 2rem;
+  }
+
+  @media only screen and (max-width: 958px){
+    flex: 6;
+  }
+
 `;
 
 export const HeroImg = styled.img`
@@ -90,6 +142,11 @@ export const HeroImg = styled.img`
   box-shadow: 9px 8px #fff;
   margin-top: 20vh;
   margin-left: 10%;
+
+  @media only screen and (max-width: 768px) {
+    width: 220px;
+    height: 320px;
+  }
 `;
 
 // End of HeroSection LeftSide
