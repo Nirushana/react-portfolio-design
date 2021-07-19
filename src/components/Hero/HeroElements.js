@@ -6,11 +6,12 @@ export const HeroContainter = styled.div`
   background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)),
     url(${ImgBg});
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-position: center;
   background-size: cover;
 
   @media only screen and (max-width: 768px) {
+    min-height: 110vh;
   }
 `;
 
@@ -22,22 +23,21 @@ export const HeroContent = styled.div`
   margin: 0 auto;
   max-width: 1000px;
   display: flex;
-  position: relative;
+  
 
   @media only screen and (max-width: 768px) {
     flex-direction: column;
     margin-top: -18vh;
+    
   }
 `;
 
 export const HeroRight = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   align-items: flex-start;
-  /* height: 100vh;
-  max-height: 100%;
-  width: 650px; */
+  
   color: #fff;
   line-height: 1;
   font-weight: bold;
@@ -82,7 +82,7 @@ export const HeroH1 = styled.h1`
   width: 100%;
 
   @media only screen and (max-width: 768px) {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 
   @media only screen and (max-width: 950px) {
@@ -151,29 +151,3 @@ export const HeroImg = styled.img`
 
 // End of HeroSection LeftSide
 
-// Hero Section Vertical Text
-
-export const HeroVerticalText = styled.div`
-  
-  writing-mode: sideways-lr;
-  position: absolute;
-  margin-top: 56vh;
-  margin-left: 20px;
-  text-orientation: mixed;
-  font-weight: 600;
-
-  
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
-`;
-
-export const HeroVerticalTextH1 = styled.h1`
-  font-size: 3rem;
-  color: #fff;
-  overflow: hidden;
-  text-align: center;
-
-`
-
-// End of Hero Hero Section Vertical Text
